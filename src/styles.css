@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.svg-top {
+    width: 50%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.svg-bottom {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.svg-bottom,
+.svg-top {
+    display: none;
+}
+
+.card-container {
+    background-color: #FFF;
+    position: relative;
+    height: 375px;
+    width: 350px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 40% 40% 20%;
+}
+
+.profile-background {
+    grid-row: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.user-bio {
+    grid-row: 2;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.user-thumbnail {
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-bio h2 {
+    margin: .5rem 0;
+    font-weight: 700;
+}
+
+.user-bio h2 span {
+    font-weight: 300;
+    margin-left: .5rem;
+}
+
+.user-metrics {
+    grid-row: 3;
+    border-top: 1px solid rgb(214, 214, 214);
+    display: grid;
+    grid-template-columns: 33,33% 33,33% 33,33%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.user-metrics p {
+    font-size: .6rem;
+    margin-top: .5rem;
+    color: rgb(157, 157, 157);
+}
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33,33%;
+}
+
+.followers {
+    grid-column: 1;
+}
+
+.likes {
+    grid-column: 2;
+}
+
+.photos {
+    grid-column: 3;
+}
