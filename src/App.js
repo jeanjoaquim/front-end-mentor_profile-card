@@ -6,14 +6,11 @@ import './styles.css';
 function App() {
   return (
 
-    <>
-      
-      <div className='container'>
-        <img className='svg-top' src={BgPatternTop} alt='' />
-        <img className='svg-bottom' src={BgPatternBottom} alt='' />
-        <Card />
-      </div>
-    </>
+    <div className='container'>
+      <img src={BgPatternTop} alt='' className='bg-pattern-top'/>
+      <img src={BgPatternBottom} alt='' className='bg-pattern-bottom'/>
+      <Card />
+    </div>
     
   );
 }
